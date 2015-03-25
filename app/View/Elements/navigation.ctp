@@ -1,12 +1,20 @@
 <?php
 
-$homeLink = $this->Html->link(
-      'Home',
-      [
-        'controller' => 'applicants',
-        'action' => 'index',
-      ]
-    );
+$home_link    = $this->Html->link(
+                    'Home',
+                    [
+                      'controller' => 'applicants',
+                      'action'     => 'index',
+                    ]
+                );
+
+$aboutus_link = $this->Html->link(
+                    'About us',
+                    [
+                      'controller' => 'applicants',
+                      'action'     => 'aboutus',
+                    ]
+                );
 
 ?>
 
@@ -22,9 +30,9 @@ $homeLink = $this->Html->link(
   </div>
   <div id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><?php echo $homeLink ?></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Apply</a></li>
+      <li><?php echo $home_link ?></li>
+      <li><?php echo $aboutus_link ?></li>
+      <li ><a href="#contact">Apply</a></li>
       <li><a href="#contact">Message</a></li>
       <li><a href="#contact">News</a></li>
       <li><a href="#contact">Contact Us</a></li>
